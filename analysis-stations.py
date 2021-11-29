@@ -89,7 +89,7 @@ sns.set_style("white")
 
 # Plot most popular start stations
 ax = geo_top_start_stations.plot(
-    figsize=(8, 10),
+    figsize=(9, 10),
     alpha=1,
     edgecolor="k",
     markersize=60,
@@ -116,7 +116,7 @@ plt.show()
 # Plot most popular destination stations
 
 ax = geo_top_end_stations.plot(
-    figsize=(8, 10),
+    figsize=(9, 10),
     alpha=1,
     edgecolor="k",
     markersize=60,
@@ -142,7 +142,7 @@ plt.show()
 # Plot most popular stations
 
 ax = geo_top_stations.plot(
-    figsize=(8, 10),
+    figsize=(9, 10),
     alpha=1,
     edgecolor="k",
     markersize=60,
