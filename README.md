@@ -12,7 +12,7 @@ We drew an entity-relationship diagram to guide the schema creation of our datab
     <img src="figures/entity_relationship_diagram_1.png" alt="Entity-Relationship Diagram" height="384">
 </p
 
-We then query the database and visualize the results to gain insight into both the stations and the rides. We answer questions such as *What are the most popular stations?*
+We then queried the database and visualized the results to gain insight into both the stations and the rides. In this case study, we answered questions such as *What are the most popular stations?*
 
 <p align="center">
     <img src="figures/most_popular_stations.png" alt="Most Popular Stations" height="512">
@@ -45,6 +45,8 @@ This project uses several Python libraries to run:
 - [matplotlib.pyplot](https://matplotlib.org/) and [seaborn](https://seaborn.pydata.org/) for data visualization
 - [GeoPandas](https://geopandas.org/en/stable/) to convert pandas DataFrames to geospatial data for map visualizations
 - [contextily](https://pypi.org/project/contextily/) to get map tiles used for the background map in the map visualizations
+
+We used Python 3.9 throughout the project.
 
 ## References
 
