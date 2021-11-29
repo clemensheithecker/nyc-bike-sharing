@@ -12,15 +12,19 @@ We drew an entity-relationship diagram to guide the schema creation of our datab
     <img src="figures/entity_relationship_diagram_1.png" alt="Entity-Relationship Diagram" height="384">
 </p
 
-We then query the database and visualize the results to gain insight into both the stations and the rides. We answer questions such as *What are the most popular stations?*, *Do people rent bikes more often on weekends?* and *Do people rent bikes less often on rainy days?*
+We then query the database and visualize the results to gain insight into both the stations and the rides. We answer questions such as *What are the most popular stations?*
 
 <p align="center">
     <img src="figures/most_popular_stations.png" alt="Most Popular Stations" height="512">
 </p
 
+and *Do people rent bikes less often on rainy days?*
+
 <p align="center">
     <img src="figures/precipitation_effect.png" alt="Precipitation Effect" height="384">
 </p
+
+A summary of our analysis can be found in `presentation.pdf`.
 
 ## Instructions
 
