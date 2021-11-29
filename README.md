@@ -16,6 +16,7 @@ This project uses several libraries to run:
 
 - [mysql.connector](https://dev.mysql.com/doc/connector-python/en/) to connect to the MySQL database server (localhost) in Python
 - [pandas](https://pandas.pydata.org/) for basic data cleaning and transformation in Python
+- [matplotlib.pyplot](https://matplotlib.org/) and [seaborn](https://seaborn.pydata.org/) for data visualization
 
 ## References
 
