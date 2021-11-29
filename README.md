@@ -4,6 +4,19 @@ The goal of this project was to build a database using MySQL, query the database
 
 This project was a collaboration with Thea A. Putnam as part of group work in a Databases & Big Data course.
 
+## Instructions
+
+1. Run `database-setup.py` to setup the database with the schema defined in `database-setup.sql`, read the datasets, perform basic cleaning, and insert the data into the MySQL database.
+   
+    _NOTE: The database is overwritten every time the setup file runs. This is so changes can be made more conveninetly without manually deleting the database for every change in the setup. To prevent this, comment out `DROP DATABASE IF EXISTS nyc_bike_sharing;` in `database-setup.sql`._
+
+## Libraries Used
+
+This project uses several libraries to run:
+
+- [mysql.connector](https://dev.mysql.com/doc/connector-python/en/) to connect to the MySQL database server (localhost) in Python
+- [pandas](https://pandas.pydata.org/) for basic data cleaning and transformation in Python
+
 ## References
 
 We used data from the following sources:
