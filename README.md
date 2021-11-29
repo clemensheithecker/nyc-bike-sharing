@@ -4,6 +4,24 @@ The goal of this project was to build a database using MySQL, query the database
 
 This project was a collaboration with Thea A. Putnam as part of group work in a Databases & Big Data course.
 
+Riding a bike is a greener alternative to driving a car or taking a taxi and often is a quicker way of getting around in traffic-jammed cities. Bike-sharing can be a useful service not only for tourists but also for commuters and locals. In this case study, we used bike-sharing data from Citi Bike in New York City and Newark as well as weather data to analyze riding patterns. For simplicity and to minimize the data size, we used data for October 2021.
+
+We drew an entity-relationship diagram to guide the schema creation of our database.
+
+<p align="center">
+    <img src="figures/entity_relationship_diagram_1.png" alt="Entity-Relationship Diagram" height="384">
+</p
+
+We then query the database and visualize the results to gain insight into both the stations and the rides. We answer questions such as *What are the most popular stations?*, *Do people rent bikes more often on weekends?* and *Do people rent bikes less often on rainy days?*
+
+<p align="center">
+    <img src="figures/most_popular_stations.png" alt="Most Popular Stations" height="512">
+</p
+
+<p align="center">
+    <img src="figures/precipitation_effect.png" alt="Precipitation Effect" height="384">
+</p
+
 ## Instructions
 
 Change the MySQL user credentials in the `config` dictionary in all Python scripts (`database-setup.py`, `analysis-stations.py`, and `analysis-rides.py`).
@@ -16,7 +34,7 @@ Change the MySQL user credentials in the `config` dictionary in all Python scrip
 
 ## Libraries Used
 
-This project uses several libraries to run:
+This project uses several Python libraries to run:
 
 - [mysql.connector](https://dev.mysql.com/doc/connector-python/en/) to connect to the MySQL database server (localhost) in Python
 - [pandas](https://pandas.pydata.org/) for basic data cleaning and transformation in Python
