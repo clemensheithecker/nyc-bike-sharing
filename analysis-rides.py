@@ -1,3 +1,8 @@
+##
+# Connect to MySQL server (localhost), query database using 'analysis-rides.sql' file
+# and visualize data
+##
+
 import mysql.connector
 import pandas as pd
 import matplotlib.pyplot as plt
