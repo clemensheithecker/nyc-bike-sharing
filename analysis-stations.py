@@ -88,8 +88,10 @@ sns.set_context("talk")
 sns.set_style("white")
 
 # Plot most popular start stations
-ax = geo_top_start_stations.plot(
-    figsize=(9, 10),
+fig = plt.figure(figsize=(9, 10))
+ax = fig.add_axes([0, 0.05, 0.9, 0.9])
+geo_top_start_stations.plot(
+    ax=ax,
     alpha=1,
     edgecolor="k",
     markersize=60,
@@ -104,7 +106,7 @@ ax.axes.yaxis.set_visible(False)
 
 # Add colorbar
 vmin, vmax = 0, 8240
-fig = ax.get_figure()
+fig.subplots_adjust(hspace=0.0, wspace=0.0)
 sm = plt.cm.ScalarMappable(cmap="rocket_r", norm=plt.Normalize(vmin=vmin, vmax=vmax))
 divider = make_axes_locatable(ax)
 cax = inset_axes(ax, width="5%", height="50%", loc="right", borderpad=-2)
@@ -114,9 +116,10 @@ plt.savefig("figures/most_popular_start_stations.png", dpi=400)
 plt.show()
 
 # Plot most popular destination stations
-
-ax = geo_top_end_stations.plot(
-    figsize=(9, 10),
+fig = plt.figure(figsize=(9, 10))
+ax = fig.add_axes([0, 0.05, 0.9, 0.9])
+geo_top_end_stations.plot(
+    ax=ax,
     alpha=1,
     edgecolor="k",
     markersize=60,
@@ -124,13 +127,12 @@ ax = geo_top_end_stations.plot(
     cmap="rocket",
 )
 cx.add_basemap(ax, source=cx.providers.CartoDB.Positron, zoom=12)
-_ = plt.title("Most Popular Destination Stations")
+plt.title("Most Popular Destination Stations")
 ax.axes.xaxis.set_visible(False)
 ax.axes.yaxis.set_visible(False)
 
 # Add colorbar
 vmin, vmax = 0, 8240
-fig = ax.get_figure()
 sm = plt.cm.ScalarMappable(cmap="rocket_r", norm=plt.Normalize(vmin=vmin, vmax=vmax))
 divider = make_axes_locatable(ax)
 cax = inset_axes(ax, width="5%", height="50%", loc="right", borderpad=-2)
@@ -140,9 +142,10 @@ plt.savefig("figures/most_popular_end_stations.png", dpi=400)
 plt.show()
 
 # Plot most popular stations
-
-ax = geo_top_stations.plot(
-    figsize=(9, 10),
+fig = plt.figure(figsize=(9, 10))
+ax = fig.add_axes([0, 0.05, 0.9, 0.9])
+geo_top_stations.plot(
+    ax=ax,
     alpha=1,
     edgecolor="k",
     markersize=60,
@@ -150,13 +153,12 @@ ax = geo_top_stations.plot(
     cmap="rocket",
 )
 cx.add_basemap(ax, source=cx.providers.CartoDB.Positron, zoom=12)
-_ = plt.title("Most Popular Stations")
+plt.title("Most Popular Stations")
 ax.axes.xaxis.set_visible(False)
 ax.axes.yaxis.set_visible(False)
 
 # Add colorbar
 vmin, vmax = 0, 8240
-fig = ax.get_figure()
 sm = plt.cm.ScalarMappable(cmap="rocket_r", norm=plt.Normalize(vmin=vmin, vmax=vmax))
 divider = make_axes_locatable(ax)
 cax = inset_axes(ax, width="5%", height="50%", loc="right", borderpad=-2)
